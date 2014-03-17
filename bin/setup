@@ -1,0 +1,3 @@
+#!/bin/bash -eu
+
+echo "This is where the setup logic will go."

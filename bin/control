@@ -1,0 +1,48 @@
+#!/bin/bash -e
+
+source $OPENSHIFT_CARTRIDGE_SDK_BASH
+
+function build() {
+}
+
+function deploy() {
+}
+
+function start() {
+}
+
+function stop() {
+}
+
+function restart() {
+}
+
+function status() {
+}
+
+function reload() {
+}
+
+function tidy() {
+}
+
+function threaddump() {
+}
+
+function pre_restore() {
+}
+
+case "$1" in
+  build)           build ;;
+  deploy)          deploy ;;
+  pre-restore)     pre_restore ;;
+  start)           start ;;
+  stop)            stop ;;
+  restart)         restart ;;
+  status)          status ;;
+  reload)          reload ;;
+  tidy)            tidy ;;
+  threaddump)      threaddump ;;
+  update-configuration) update-configuration;;
+  *)               exit 0
+esac

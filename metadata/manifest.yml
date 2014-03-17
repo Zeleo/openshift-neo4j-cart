@@ -1,0 +1,41 @@
+---
+Name: neo4j
+Cartridge-Short-Name: NEO4J
+Architecture: noarch
+Display-Name: Neo4j 2.0.1
+Description: Neo4j is an open source graph database.
+Version: '2.0.1'
+Versions:
+- '2.0.1'
+Cartridge-Version: 0.0.1
+Compatible-Versions:
+- 0.0.1
+Cartridge-Vendor: bjönd
+License: GPL 3
+Vendor: Neo Tchnology
+Categories:
+- service
+- database
+- nosql
+- embedded
+Website: http://www.neo4j.org/
+Cart-Data:
+- Key: connection_url
+  Type: cart_data
+  Description: Neo4j Server URL.
+Provides:
+- neo4j 2.0.1
+Publishes:
+  publish-graph-db-connection-info:
+    Type: ENV:NET_TCP:graphdb:connection-info
+Scaling:
+  Min: 1
+  Max: 1
+Endpoints:
+- Private-IP-Name: DB_HOST
+  Private-Port-Name: DB_PORT
+  Private-Port: 74747
+  Public-Port-Name: DB_PROXY_PORT
+  Protocols:
+  - http
+  - https
