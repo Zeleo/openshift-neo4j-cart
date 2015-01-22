@@ -1,36 +1,57 @@
 #!/bin/bash -e
 
-source $OPENSHIFT_CARTRIDGE_SDK_BASH
-
 function build() {
+    echo 
 }
 
 function deploy() {
+    echo
 }
 
 function start() {
+    echo
 }
 
 function stop() {
+    echo
 }
 
 function restart() {
+    echo
 }
 
 function status() {
+    echo
 }
 
 function reload() {
+    echo
 }
 
 function tidy() {
+    echo
 }
 
 function threaddump() {
+    echo
 }
 
 function pre_restore() {
+    echo
 }
+
+#
+#  main():
+#
+
+# Ensure arguments.
+if ! [ $# -eq 1 ]; then
+    echo "Usage: $0 [start|restart|graceful|graceful-stop|stop|status]"
+    exit 1
+fi
+
+# Source utility functions.
+source $OPENSHIFT_CARTRIDGE_SDK_BASH
 
 case "$1" in
   build)           build ;;
