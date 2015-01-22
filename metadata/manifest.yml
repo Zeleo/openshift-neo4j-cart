@@ -4,7 +4,6 @@ Cartridge-Short-Name: NEO4J
 Architecture: noarch
 Display-Name: Neo4j 2.0.1
 Description: Neo4j is an open source graph database.
-Source-Url: ssh://github.com:Bjond/openshift-neo4j-cart.git
 Version: '2.0.1'
 Versions:
 - '2.0.1'
@@ -40,3 +39,5 @@ Endpoints:
   Protocols:
   - http
   - https
+
+Source-Url: ssh://github.com:Bjond/openshift-neo4j-cart.git
