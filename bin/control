@@ -19,7 +19,7 @@ function deploy() {
 
 function start() {
     echo "starting..."
-    $OPENSHIFT_NEO4J_DIR/versions/2.0.1/bin/neo4j start
+    $OPENSHIFT_NEO4J_DIR/versions/2.0.1/bin/neo4j start-no-wait
     #&>> $OPENSHIFT_NEO4J_DIR/versions/2.0.1/console.log
 }
 
