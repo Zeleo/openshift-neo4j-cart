@@ -40,6 +40,10 @@ Endpoints:
   Private-Port-Name: DB_PORT_HTTPS
   Private-Port:      7473
   Public-Port-Name:  DB_PROXY_PORT_HTTPS
+- Private-IP-Name: DB_HOST
+  Private-Port-Name: DB_SHELL_PORT
+  Private-Port:      7476
+  Public-Port-Name:  DB_PROXY_SHELL_PORT
   Protocols:
   - http
   - https
