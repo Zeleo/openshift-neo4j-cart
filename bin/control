@@ -1,5 +1,14 @@
 #!/bin/bash -e
 
+# Ensure arguments.
+if ! [ $# -eq 1 ]; then
+    echo "Usage: $0 [start|restart|graceful|graceful-stop|stop|status]"
+    exit 1
+fi
+
+# Source utility functions.
+source $OPENSHIFT_CARTRIDGE_SDK_BASH
+
 function build() {
     echo 
 }
@@ -9,20 +18,28 @@ function deploy() {
 }
 
 function start() {
-    echo
+    echo "starting..."
+    $OPENSHIFT_NEO4J_DIR/versions/2.0.1/bin/neo4j start &>> $OPENSHIFT_NEO4J_DIR/versions/2.0.1/console.log
 }
 
 function stop() {
-    echo
+    echo "Stopping..."
+    $OPENSHIFT_NEO4J_DIR/versions/2.0.1/bin/neo4j stop &>> $OPENSHIFT_NEO4J_DIR/versions/2.0.1/console.log
+
 }
 
 function restart() {
-    echo
+    echo "Restarting..."
+    $OPENSHIFT_NEO4J_DIR/versions/2.0.1/bin/neo4j restart &>> $OPENSHIFT_NEO4J_DIR/versions/2.0.1/console.log
+
 }
 
 function status() {
-    echo
+    echo "Status..."
+    $OPENSHIFT_NEO4J_DIR/versions/2.0.1/bin/neo4j status &>> $OPENSHIFT_NEO4J_DIR/versions/2.0.1/console.log
+
 }
+
 
 function reload() {
     echo
@@ -44,14 +61,6 @@ function pre_restore() {
 #  main():
 #
 
-# Ensure arguments.
-if ! [ $# -eq 1 ]; then
-    echo "Usage: $0 [start|restart|graceful|graceful-stop|stop|status]"
-    exit 1
-fi
-
-# Source utility functions.
-source $OPENSHIFT_CARTRIDGE_SDK_BASH
 
 case "$1" in
   build)           build ;;
