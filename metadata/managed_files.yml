@@ -1,6 +1,4 @@
 ---
-snapshot_exclusions:
-- mongodb/*
 locked_files:
 - bin/
 - bin/*
@@ -10,5 +8,4 @@ locked_files:
 - metadata/*
 - hooks/
 - hooks/*
-processed_templates:
-- '**/*.erb'
+
