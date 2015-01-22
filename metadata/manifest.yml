@@ -40,4 +40,4 @@ Endpoints:
   - http
   - https
 
-Source-Url: git@github.com:Bjond/openshift-neo4j-cart.git
+Source-Url: https://github.com/Bjond/openshift-neo4j-cart.git
