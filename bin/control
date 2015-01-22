@@ -25,19 +25,22 @@ function start() {
 
 function stop() {
     echo "Stopping..."
-    $OPENSHIFT_NEO4J_DIR/versions/2.0.1/bin/neo4j stop &>> $OPENSHIFT_NEO4J_DIR/versions/2.0.1/console.log
+    $OPENSHIFT_NEO4J_DIR/versions/2.0.1/bin/neo4j stop
+    #&>> $OPENSHIFT_NEO4J_DIR/versions/2.0.1/console.log
 
 }
 
 function restart() {
     echo "Restarting..."
-    $OPENSHIFT_NEO4J_DIR/versions/2.0.1/bin/neo4j restart &>> $OPENSHIFT_NEO4J_DIR/versions/2.0.1/console.log
+    $OPENSHIFT_NEO4J_DIR/versions/2.0.1/bin/neo4j restart
+    #&>> $OPENSHIFT_NEO4J_DIR/versions/2.0.1/console.log
 
 }
 
 function status() {
     echo "Status..."
-    $OPENSHIFT_NEO4J_DIR/versions/2.0.1/bin/neo4j status &>> $OPENSHIFT_NEO4J_DIR/versions/2.0.1/console.log
+    $OPENSHIFT_NEO4J_DIR/versions/2.0.1/bin/neo4j status
+    #&>> $OPENSHIFT_NEO4J_DIR/versions/2.0.1/console.log
 
 }
 
