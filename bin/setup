@@ -8,3 +8,8 @@ read T1 T2 T3 T4 <<<$(IFS=":"; echo $OPENSHIFT_NEO4J_IDENT)
 echo " " >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j-server.properties
 echo " " >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j-server.properties
 echo 'org.neo4j.server.webserver.address='$OPENSHIFT_NEO4J_DB_HOST  >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j-server.properties
+
+
+echo " " >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j.properties
+echo " " >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j.properties
+echo 'online_backup_server='$OPENSHIFT_NEO4J_DB_HOST':6362'  >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j.properties
