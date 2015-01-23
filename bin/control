@@ -9,6 +9,9 @@ fi
 # Source utility functions.
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 
+# Find the damned NEO4J version.
+read T1 T2 T3 T4 <<<$(IFS=":"; echo $OPENSHIFT_NEO4J_IDENT)
+
 function build() {
     echo 
 }
@@ -19,28 +22,28 @@ function deploy() {
 
 function start() {
     echo "starting..."
-    $OPENSHIFT_NEO4J_DIR/versions/2.0.1/bin/neo4j start-no-wait
-    #&>> $OPENSHIFT_NEO4J_DIR/versions/2.0.1/console.log
+    $OPENSHIFT_NEO4J_DIR/versions/$T3/bin/neo4j start-no-wait
+    #&>> $OPENSHIFT_NEO4J_DIR/versions/$T3/console.log
 }
 
 function stop() {
     echo "Stopping..."
-    $OPENSHIFT_NEO4J_DIR/versions/2.0.1/bin/neo4j stop
-    #&>> $OPENSHIFT_NEO4J_DIR/versions/2.0.1/console.log
+    $OPENSHIFT_NEO4J_DIR/versions/$T3/bin/neo4j stop
+    #&>> $OPENSHIFT_NEO4J_DIR/versions/$T3/console.log
 
 }
 
 function restart() {
     echo "Restarting..."
-    $OPENSHIFT_NEO4J_DIR/versions/2.0.1/bin/neo4j restart
-    #&>> $OPENSHIFT_NEO4J_DIR/versions/2.0.1/console.log
+    $OPENSHIFT_NEO4J_DIR/versions/$T3/bin/neo4j restart
+    #&>> $OPENSHIFT_NEO4J_DIR/versions/$T3/console.log
 
 }
 
 function status() {
     echo "Status..."
-    $OPENSHIFT_NEO4J_DIR/versions/2.0.1/bin/neo4j status
-    #&>> $OPENSHIFT_NEO4J_DIR/versions/2.0.1/console.log
+    $OPENSHIFT_NEO4J_DIR/versions/$T3/bin/neo4j status
+    #&>> $OPENSHIFT_NEO4J_DIR/versions/$T3/console.log
 
 }
 
