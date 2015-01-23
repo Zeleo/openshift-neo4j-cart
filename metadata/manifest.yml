@@ -2,11 +2,11 @@
 Name: neo4j
 Cartridge-Short-Name: NEO4J
 Architecture: noarch
-Display-Name: Neo4j 2.0.1
+Display-Name: Neo4j 2.1.6
 Description: Neo4j is an open source graph database.
-Version: '2.0.1'
+Version: '2.1.6'
 Versions:
-- '2.0.1'
+- '2.1.6'
 Cartridge-Version: 0.0.1
 Compatible-Versions:
 - 0.0.1
@@ -24,7 +24,7 @@ Cart-Data:
   Type: cart_data
   Description: Neo4j Server URL.
 Provides:
-- neo4j 2.0.1
+- neo4j 2.1.6
 Publishes:
   publish-graph-db-connection-info:
     Type: ENV:NET_TCP:graphdb:connection-info
