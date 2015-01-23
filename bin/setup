@@ -1,10 +1,10 @@
 #!/bin/bash -eu
 
-echo "This is where the setup logic will go."
 
-# Apparently this is deprecated. I think we just run it.
-#$OPENSHIFT_NEO4J_DIR/versions/2.0.1/bin/neo4j-installer install
+# Find the damned NEO4J version.
+read T1 T2 T3 T4 <<<$(IFS=":"; echo $OPENSHIFT_NEO4J_IDENT)
 
-echo " " >> $OPENSHIFT_NEO4J_DIR/versions/2.0.1/conf/neo4j-server.properties
-echo " " >> $OPENSHIFT_NEO4J_DIR/versions/2.0.1/conf/neo4j-server.properties
-echo 'org.neo4j.server.webserver.address='$OPENSHIFT_NEO4J_DB_HOST  >> $OPENSHIFT_NEO4J_DIR/versions/2.0.1/conf/neo4j-server.properties
+
+echo " " >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j-server.properties
+echo " " >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j-server.properties
+echo 'org.neo4j.server.webserver.address='$OPENSHIFT_NEO4J_DB_HOST  >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j-server.properties
