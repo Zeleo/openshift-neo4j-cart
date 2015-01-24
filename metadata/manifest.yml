@@ -19,7 +19,7 @@ Categories:
 - nosql
 - web_framework
 #- embedded
-- java
+#- java
 Website: http://www.neo4j.org/
 Cart-Data:
 - Key: connection_url
