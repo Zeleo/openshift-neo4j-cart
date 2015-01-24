@@ -46,13 +46,9 @@ Endpoints:
   Private-Port:      7476
   Public-Port-Name:  DB_PROXY_SHELL_PORT
 - Private-IP-Name:   HTTP_IP
-    Private-Port-Name: HTTP_PORT
-    Private-Port:      8080
-    Public-Port-Name:  PROXY_HTTP_PORT
-    Mappings:
-      - Frontend:      ""
-        Backend:       ""
-        Options:       { websocket: false }  
+  Private-Port-Name: HTTP_PORT
+  Private-Port:      8080
+  Public-Port-Name:  PROXY_HTTP_PORT
   Protocols:
   - http
   - https
