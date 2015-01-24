@@ -38,11 +38,13 @@ Endpoints:
 - Private-IP-Name: DB_HOST
   Private-Port-Name: DB_PORT
   Private-Port:      7474
-  Public-Port-Name:  DB_PROXY_PORT
+  Public-Port-Name: DB_PROXY_PORT
+
 - Private-IP-Name: DB_HOST
   Private-Port-Name: DB_PORT_HTTPS
   Private-Port:      7473
-  Public-Port-Name:  DB_PROXY_PORT_HTTPS
+  Public-Port-Name: DB_PROXY_PORT_HTTPS
+
 - Private-IP-Name: DB_HOST
   Private-Port-Name: DB_SHELL_PORT
   Private-Port:      7476
