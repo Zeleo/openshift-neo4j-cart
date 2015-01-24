@@ -45,8 +45,5 @@ Endpoints:
   Private-Port-Name: DB_SHELL_PORT
   Private-Port:      7476
   Public-Port-Name:  DB_PROXY_SHELL_PORT
-  Protocols:
-  - http
-  - https
 
 Source-Url: https://github.com/Bjond/openshift-neo4j-cart.git
