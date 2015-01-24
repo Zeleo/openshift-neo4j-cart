@@ -17,8 +17,9 @@ Categories:
 - service
 - database
 - nosql
-#- embedded
 - web_framework
+#- embedded
+- java
 Website: http://www.neo4j.org/
 Cart-Data:
 - Key: connection_url
