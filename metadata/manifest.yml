@@ -33,6 +33,10 @@ Scaling:
   Min: 1
   Max: 4
 Endpoints:
+- Private-IP-Name:   HTTP_IP
+    Private-Port-Name: HTTP_PORT
+    Private-Port:      8080
+    Public-Port-Name:  PROXY_HTTP_PORT
 - Private-IP-Name: DB_HOST
   Private-Port-Name: DB_PORT
   Private-Port:      7474
@@ -45,10 +49,6 @@ Endpoints:
   Private-Port-Name: DB_SHELL_PORT
   Private-Port:      7476
   Public-Port-Name:  DB_PROXY_SHELL_PORT
-- Private-IP-Name:   HTTP_IP
-  Private-Port-Name: HTTP_PORT
-  Private-Port:      8080
-  Public-Port-Name:  PROXY_HTTP_PORT
   Protocols:
   - http
   - https
