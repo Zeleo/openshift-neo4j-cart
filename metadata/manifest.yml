@@ -15,13 +15,12 @@ License: GPL 3
 Vendor: Neo Technology
 Categories:
 - service
-#- database
-#- nosql
-- web_framework
+- database
+- nosql
 - java
 - java_ee_7
-#- embedded
-- plugin
+- embedded
+#- pluginin
 Website: http://www.neo4j.org/
 Cart-Data:
 - Key: connection_url
@@ -48,13 +47,5 @@ Endpoints:
   Private-Port-Name: DB_SHELL_PORT
   Private-Port:      7476
   Public-Port-Name:  DB_PROXY_SHELL_PORT
-- Private-IP-Name:   HTTP_IP
-  Private-Port-Name: HTTP_PORT
-  Private-Port:      8080
-  Public-Port-Name:  PROXY_HTTP_PORT
-  Mappings:
-    - Frontend:      ""
-      Backend:       ""
-      Options:       { websocket: false }
 
 Source-Url: https://github.com/Bjond/openshift-neo4j-cart.git
