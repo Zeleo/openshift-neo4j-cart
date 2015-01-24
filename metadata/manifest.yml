@@ -17,7 +17,7 @@ Categories:
 - service
 - database
 - nosql
-- embedded
+#- embedded
 - web_framework
 Website: http://www.neo4j.org/
 Cart-Data:
