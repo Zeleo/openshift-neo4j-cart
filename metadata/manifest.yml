@@ -15,9 +15,11 @@ License: GPL 3
 Vendor: Neo Tchnology
 Categories:
 - service
-- database
-- nosql
+#- database
+#- nosql
 - web_framework
+- java
+- java_ee_7
 #- embedded
 #- java
 Website: http://www.neo4j.org/
