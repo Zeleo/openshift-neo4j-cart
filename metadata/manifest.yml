@@ -12,7 +12,7 @@ Compatible-Versions:
 - 0.0.1
 Cartridge-Vendor: bjond
 License: GPL 3
-Vendor: Neo Tchnology
+Vendor: Neo Technology
 Categories:
 - service
 #- database
@@ -21,7 +21,7 @@ Categories:
 - java
 - java_ee_7
 #- embedded
-#- java
+- plugin
 Website: http://www.neo4j.org/
 Cart-Data:
 - Key: connection_url
