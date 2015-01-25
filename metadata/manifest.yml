@@ -50,4 +50,20 @@ Endpoints:
   Private-Port:      7476
   Public-Port-Name:  DB_PROXY_SHELL_PORT
 
+- Private-IP-Name: DB_HOST
+  Private-Port-Name: DB_MASTER_CLUSTER_SERVER_PORT
+  Private-Port:      5001
+  Public-Port-Name:  DB_PROXY_MASTER_CLUSTER_SERVER_PORT
+
+- Private-IP-Name: DB_HOST
+  Private-Port-Name: DB_MASTER_SERVER_PORT
+  Private-Port:      6001
+  Public-Port-Name:  DB_PROXY_MASTER_SERVER_PORT
+
+- Private-IP-Name: DB_HOST
+  Private-Port-Name: DB_MASTER_BACKUP_PORT
+  Private-Port:      6362
+  Public-Port-Name:  DB_PROXY_MASTER_BACKUP_PORT
+  
+  
 Source-Url: https://github.com/Bjond/openshift-neo4j-cart.git

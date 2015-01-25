@@ -13,3 +13,16 @@ echo 'org.neo4j.server.webserver.address='$OPENSHIFT_NEO4J_DB_HOST  >> $OPENSHIF
 echo " " >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j.properties
 echo " " >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j.properties
 echo 'online_backup_server='$OPENSHIFT_NEO4J_DB_HOST':6362'  >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j.properties
+
+echo " " >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j.properties
+echo " " >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j.properties
+echo 'ha.initial_hosts='$OPENSHIFT_NEO4J_DB_HOST':5001'  >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j.properties
+
+echo " " >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j.properties
+echo " " >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j.properties
+echo 'ha.cluster_server='$OPENSHIFT_NEO4J_DB_HOST':5001'  >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j.properties
+
+echo " " >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j.properties
+echo " " >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j.properties
+echo 'ha.server='$OPENSHIFT_NEO4J_DB_HOST':6001'  >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j.properties
+
