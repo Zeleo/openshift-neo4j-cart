@@ -94,3 +94,5 @@ case "$1" in
   update-configuration) update-configuration;;
   *)
 esac
+
+exit(0)
