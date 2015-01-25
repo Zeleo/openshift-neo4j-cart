@@ -14,10 +14,12 @@ read T1 T2 T3 T4 <<<$(IFS=":"; echo $OPENSHIFT_NEO4J_IDENT)
 
 function build() {
     echo 
+    return 0
 }
 
 function deploy() {
     echo
+    return 0
 }
 
 function start() {
@@ -25,6 +27,7 @@ function start() {
     nohup $OPENSHIFT_NEO4J_DIR/versions/$T3/bin/neo4j start
     #$OPENSHIFT_NEO4J_DIR/versions/$T3/bin/neo4j start-no-wait
     #&>> $OPENSHIFT_NEO4J_DIR/versions/$T3/console.log
+    return 0
 }
 
 function stop() {
@@ -32,6 +35,7 @@ function stop() {
     nohup $OPENSHIFT_NEO4J_DIR/versions/$T3/bin/neo4j stop
     #&>> $OPENSHIFT_NEO4J_DIR/versions/$T3/console.log
 
+    return 0
 }
 
 function restart() {
@@ -39,6 +43,7 @@ function restart() {
     $OPENSHIFT_NEO4J_DIR/versions/$T3/bin/neo4j restart
     #&>> $OPENSHIFT_NEO4J_DIR/versions/$T3/console.log
 
+    return 0
 }
 
 function status() {
@@ -46,23 +51,28 @@ function status() {
     $OPENSHIFT_NEO4J_DIR/versions/$T3/bin/neo4j status
     #&>> $OPENSHIFT_NEO4J_DIR/versions/$T3/console.log
 
+    return 0
 }
 
 
 function reload() {
     echo
+    return 0
 }
 
 function tidy() {
     echo
+    return 0
 }
 
 function threaddump() {
     echo
+    return 0
 }
 
 function pre_restore() {
     echo
+    return 0
 }
 
 #
@@ -82,5 +92,5 @@ case "$1" in
   tidy)            tidy ;;
   threaddump)      threaddump ;;
   update-configuration) update-configuration;;
-  *)               exit 0
+  *)
 esac
