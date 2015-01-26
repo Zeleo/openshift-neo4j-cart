@@ -19,7 +19,7 @@ Categories:
 - embedded
 - java
 - java_ee_7
-- plugin
+#- plugin
 #- web_framework
 #
 #- plugin
