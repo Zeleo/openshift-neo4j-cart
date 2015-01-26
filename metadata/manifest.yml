@@ -14,7 +14,7 @@ Cartridge-Vendor: bjond
 License: GPL 3
 Vendor: Neo Technology
 Categories:
-- service
+#- service
 - database
 #- embedded
 - java
