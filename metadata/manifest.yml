@@ -19,8 +19,8 @@ Categories:
 - nosql
 - java
 - java_ee_7
+- plugin
 #- embedded
-#- plugin
 #Group-Overrides:
 #- components:
 #  - web_framework
