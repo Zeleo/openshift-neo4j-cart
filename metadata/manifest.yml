@@ -16,7 +16,7 @@ Vendor: Neo Technology
 Categories:
 - service
 - database
-- embedded
+#- embedded
 - java
 - java_ee_7
 - web_framework
