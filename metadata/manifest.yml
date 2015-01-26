@@ -14,9 +14,9 @@ Cartridge-Vendor: bjond
 License: GPL 3
 Vendor: Neo Technology
 Categories:
-#- service
+- service
 - database
-#- embedded
+- embedded
 - java
 - java_ee_7
 - plugin
@@ -39,7 +39,7 @@ Publishes:
     Type: ENV:NET_TCP:graphdb:connection-info
 Scaling:
   Min: 1
-  Max: 2
+  Max: 1
 Endpoints:
 - Private-IP-Name: DB_HOST
   Private-Port-Name: DB_PORT
