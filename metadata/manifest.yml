@@ -39,7 +39,7 @@ Publishes:
     Type: ENV:NET_TCP:graphdb:connection-info
 Scaling:
   Min: 1
-  Max: 1
+  Max: 2
 Endpoints:
 - Private-IP-Name: DB_HOST
   Private-Port-Name: DB_PORT
