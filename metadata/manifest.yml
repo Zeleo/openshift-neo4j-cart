@@ -16,10 +16,9 @@ Vendor: Neo Technology
 Categories:
 - service
 - database
-- nosql
-- java
-- java_ee_7
-- plugin
+- embedded
+#- java
+#- plugin
 #- embedded
 #Group-Overrides:
 #- components:
