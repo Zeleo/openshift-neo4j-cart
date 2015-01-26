@@ -15,8 +15,9 @@ License: GPL 3
 Vendor: Neo Technology
 Categories:
 #- service
-- database
+#- database
 - embedded
+- plugin
 #- java
 #- plugin
 #- embedded
