@@ -17,8 +17,11 @@ Categories:
 - service
 - database
 - embedded
+- java
+- java_ee_7
+- web_framework
 #- plugin
-#- java
+#
 #- plugin
 #- embedded
 #Group-Overrides:
