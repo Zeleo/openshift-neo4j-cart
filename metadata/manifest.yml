@@ -21,9 +21,9 @@ Categories:
 - java_ee_7
 #- embedded
 #- plugin
-Group-Overrides:
-- components:
-  - web_framework
+#Group-Overrides:
+#- components:
+#  - web_framework
 Website: http://www.neo4j.org/
 Cart-Data:
 - Key: connection_url
