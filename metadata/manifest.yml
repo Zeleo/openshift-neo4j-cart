@@ -21,7 +21,6 @@ Categories:
 - java_ee_7
 - embedded
 - plugin
-- web_framework
 Website: http://www.neo4j.org/
 Cart-Data:
 - Key: connection_url
