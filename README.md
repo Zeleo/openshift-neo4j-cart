@@ -12,3 +12,11 @@ Can run embedded in non-scaling mode and as a service (separate gear) in scaling
 This implementation does not scale and has a Min-Max == 1.
 
 I'm not sufficiently fly with Openshift to create a clustered scalable gear. 
+
+
+When running the logs are in the standard places:
+
+./versions/<current_version/data/log/*.log
+./versions/<current_version/data/graph.db/messages.log
+
+
