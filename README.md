@@ -15,9 +15,10 @@ openshift-neo4j-cart
 ### Logs
 When running the logs are in the standard places:
 
+```shell
 ./versions/<current_version/data/log/*.log
 ./versions/<current_version/data/graph.db/messages.log
-
+```
 
 ### Upgrade
 To upgrade or otherwise change the Neo4j version:
