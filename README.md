@@ -31,6 +31,41 @@ To upgrade or otherwise change the Neo4j version:
 * Change the version number within ./metadata/manifest.yml
 
 
+
+### Usage of Bjönd custom Neo4j
+
+To create a Neo4j gear with our custom cartridge:
+
+```Shell
+rhc create-app -n bjondinc <appname> https://raw.github.com/Bjond/openshift-neo4j-cart/master/metadata/manifest.yml jboss-wildfly-8
+
+Example:
+rhc create-app -n bjondinc testneo4j https://raw.github.com/Bjond/openshift-neo4j-cart/master/metadata/manifest.yml jboss-wildfly-8
+```
+
+To delete a Neo4j gear via RHC which is probably safer:
+
+```Shell
+rhc app delete -n bjondinc testneo4j
+```
+
+To combine the two and add scaling:
+
+```Shell
+rhc app delete -n bjondinc testneo4j ; rhc create-app --scaling -n bjondinc testneo4j https://raw.github.com/Bjond/openshift-neo4j-cart/master/metadata/manifest.yml jboss-wildfly-8
+```
+
+You may add the *--scaling* after argument after *rhc create-app* if you wish to use a scaling application.
+
+Perform the following to find the ssh access path for the background Neo4j gears:
+
+```Shell
+rhc app show -n bjondinc -a testneo4j --gears
+```
+
+
+### Go with God
+
 That's it. You should be good to go. 
 
 
