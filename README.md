@@ -1,3 +1,6 @@
+
+[](https://raw.githubusercontent.com/Bjond/openshift-neo4j-cart/master/images/BjondHealthLOGO-WhiteGrey.png)
+
 openshift-neo4j-cart
 ====================
 
