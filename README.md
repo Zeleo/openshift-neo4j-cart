@@ -1,6 +1,5 @@
 
 ![](https://raw.githubusercontent.com/Bjond/openshift-neo4j-cart/master/images/BjondHealthLOGO-WhiteGrey.png "Bjönd Health Inc.")
-![logo](https://raw.githubusercontent.com/Bjond/openshift-neo4j-cart/master/images/favicon.ico)
 
 
 openshift-neo4j-cart
