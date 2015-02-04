@@ -28,7 +28,7 @@ echo 'ha.server='$OPENSHIFT_NEO4J_DB_HOST':6001'  >> $OPENSHIFT_NEO4J_DIR/versio
 
 
 
-limit=`ulimit -n`
-if [ "$limit" -lt 65536 ]; then
-    ulimit -n 65536;
-fi
+#limit=`ulimit -n`
+#if [ "$limit" -lt 65536 ]; then
+#    ulimit -n 65536;
+#fi
