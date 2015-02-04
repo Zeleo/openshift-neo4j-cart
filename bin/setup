@@ -26,3 +26,9 @@ echo " " >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j.properties
 echo " " >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j.properties
 echo 'ha.server='$OPENSHIFT_NEO4J_DB_HOST':6001'  >> $OPENSHIFT_NEO4J_DIR/versions/$T3/conf/neo4j.properties
 
+
+
+limit=`ulimit -n`
+if [ "$limit" -lt 65536 ]; then
+    ulimit -n 65536;
+fi
